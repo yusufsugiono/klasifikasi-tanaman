@@ -47,6 +47,7 @@ encoder.fit_transform(dataset['label'])
 
 # Load model yang telah ditraining di Google Colab
 pickled_model = pickle.load(open('model/best_rf_model.pkl', 'rb'))
+print(pickled_model)
 
 col1, col2 = st.columns((3, 1))
 
